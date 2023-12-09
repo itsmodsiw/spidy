@@ -18,31 +18,32 @@ body, html {
 .content-layout {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Updated for better browser support */
+  align-items: flex-start; /* Ensure proper alignment */
   margin-bottom: 20px;
+  flex-wrap: wrap; /* Wrap items for smaller screens */
 }
 
-
 .text-card {
-  background-color: black; /* Black background for the card */
+  background-color: black; /* Consistent with body background */
   padding: 20px;
   border-radius: 8px;
   margin-right: 20px;
   flex-grow: 1;
-  flex-basis: 0;
-  box-shadow: 0 4px 8px 0 rgba(120, 35, 246, 0.5); /* Purple shadow */
+  flex-basis: calc(50% - 20px); /* Adjust basis and account for margin */
+  box-shadow: 0 4px 8px 0 rgba(120, 35, 246, 0.5); /* Shadow for depth */
 }
 
+/* Ensure side image is responsive */
 .side-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  flex-grow: 1;
-  flex-basis: 0;
 }
 
 .image-container {
   max-width: 50%;
+  flex-grow: 1;
+  flex-basis: calc(50% - 20px); /* Adjust basis and account for margin */
 }
 
 .App-logo {
@@ -52,21 +53,20 @@ body, html {
 
 .main-title {
   color: #7823f6;
-  margin-bottom: 10px; /* Reduced for closer link placement */
+  margin-bottom: 10px;
   font-size: 2.5em;
 }
 
 .twitter-link {
-  color: #1DA1F2; /* Twitter blue */
+  color: #1DA1F2;
   font-size: 1em;
   margin-bottom: 20px;
   display: block;
 }
 
-
 .sub-title {
   margin-bottom: 15px;
-  color: #ffde59;
+  color: #ffffff;
   font-size: 1em;
 }
 
@@ -102,4 +102,20 @@ footer a {
   color: #9f7aea;
   text-decoration: none;
   font-size: 1.2em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .content-layout {
+    flex-direction: column;
+  }
+
+  .text-card, .image-container {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .main-title, .sub-title {
+    font-size: smaller; /* Adjust font size for smaller screens */
+  }
 }

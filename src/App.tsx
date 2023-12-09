@@ -10,14 +10,14 @@ function App() {
           <div className="text-card">
             <img src="/logo2spidy.png" className="App-logo" alt="logo" />
             <h1 className="main-title">Free Spider, Anatoly's Vision</h1>
-            <h3 className="sub-title">WE WANT TO FREE SPIDERMAN IP we swap until we WIN #FREESPIDY</h3>
+            <h3 className="sub-title">WE WANT TO FREE SPIDEY we Aggregate Swap #FREESPIDY</h3>
             {/* Twitter link */}
             <a href="https://twitter.com/aeyakovenko/status/1733300877619064943" target="_blank" rel="noopener noreferrer" className="twitter-link">Original Tweet</a>
-            <h3 className="sub-title">ONLY CONTRACT</h3>
+            <h3 className="sub-title">CONTRACT:</h3>
             <h2 className="sub-title">AT79ReYU9XtHUTF5vM6Q4oa9K8w7918Fp5SU7G1MDMQY</h2>
             <a href="https://birdeye.so/token/AT79ReYU9XtHUTF5vM6Q4oa9K8w7918Fp5SU7G1MDMQY?chain=solana" className="contract-link" target="_blank" rel="noopener noreferrer">BUY HERE</a>
-            <h3 className="sub-title">Airdrop for Solana Community</h3>
-            <h3 className="sub-title">This is the Only real SPDR - spiderswap.io</h3>
+            <h2 className="sub-title">Airdrop for Solana Community</h2>
+            <h3 className="sub-title">Website being BUILD - BRB - spiderswap.io</h3>
 
             <div className="instructions">
               <div className="instruction-item">
