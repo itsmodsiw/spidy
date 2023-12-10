@@ -2,106 +2,72 @@ body, html {
   margin: 0;
   padding: 0;
   background-color: black;
+  font-family: 'Teko', sans-serif; /* Use Teko font */
 }
 
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
   text-align: center;
   color: white;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
 }
 
 .App-header {
-  padding: 20px;
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Maximum width */
+  padding: 30px;
+  margin: 0 auto; /* Centering */
 }
 
 .content-layout {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Ensure proper alignment */
-  margin-bottom: 20px;
-  flex-wrap: wrap; /* Wrap items for smaller screens */
-}
-
-.text-card {
-  background-color: black; /* Consistent with body background */
-  padding: 20px;
-  border-radius: 8px;
-  margin-right: 20px;
-  flex-grow: 1;
-  flex-basis: calc(50% - 20px); /* Adjust basis and account for margin */
-  box-shadow: 0 4px 8px 0 rgba(120, 35, 246, 0.5); /* Shadow for depth */
-}
-
-/* Ensure side image is responsive */
-.side-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.image-container {
-  max-width: 50%;
-  flex-grow: 1;
-  flex-basis: calc(50% - 20px); /* Adjust basis and account for margin */
+  flex-wrap: wrap;
+  width: 100%; /* Full width */
 }
 
 .App-logo {
-  height: 250px;
-  margin-bottom: 30px;
+  height: 450px;
+  margin-bottom: 40px; /* Increased space below logo */
 }
 
-.main-title {
+.main-title, .sub-title {
   color: #7823f6;
-  margin-bottom: 10px;
-  font-size: 2.5em;
+  margin-bottom: 30px; /* Increased space below titles */
 }
 
-.twitter-link {
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between social links */
+  margin-top: 30px; /* Space above social links */
+}
+
+a {
   color: #1DA1F2;
-  font-size: 1em;
   margin-bottom: 20px;
   display: block;
-}
-
-.sub-title {
-  margin-bottom: 15px;
-  color: #ffffff;
-  font-size: 1em;
-}
-
-.instructions {
-  margin: 40px 0;
-}
-
-.instruction-item {
-  margin-bottom: 25px;
-}
-
-.instruction-item h3 {
-  margin-bottom: 10px;
-  color: #ffde59;
-  font-size: 1em;
-}
-
-.instruction-item a {
-  color: #4caf50;
   text-decoration: none;
-  font-size: 1.2em;
 }
 
-.contract-link {
-  display: block;
-  color: #ff6f61;
-  margin-top: 30px;
+.button {
+  background-color: #7823f6; /* Or any other color you prefer */
+  color: white;
+  padding: 10px 23px;
+  border: none;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 1.2em;
+  display: inline-block;
+  margin: 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 40px; /* Increased space below buttons */
 }
 
-footer a {
-  color: #9f7aea;
-  text-decoration: none;
-  font-size: 1.2em;
+.button:hover {
+  background-color: #5a1ea6; /* Darker shade for hover effect */
 }
 
 /* Responsive design for smaller screens */
@@ -110,12 +76,8 @@ footer a {
     flex-direction: column;
   }
 
-  .text-card, .image-container {
-    flex-basis: 100%;
-    margin-right: 0;
-  }
-
-  .main-title, .sub-title {
-    font-size: smaller; /* Adjust font size for smaller screens */
+  .social-links {
+    flex-direction: column; /* Stack links for smaller screens */
+    align-items: center;
   }
 }
