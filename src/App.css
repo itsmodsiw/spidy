@@ -1,92 +1,121 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
 .App {
   text-align: center;
-  background-color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(11px + 2vmin);
   color: white;
-  font-family: 'Teko', serif; /* Teko font */
-  font-style: normal;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.App-header {
+  padding: 20px;
+}
+
+.content-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Ensure proper alignment */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Wrap items for smaller screens */
+}
+
+.text-card {
+  background-color: black; /* Consistent with body background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+  flex-grow: 1;
+  flex-basis: calc(50% - 20px); /* Adjust basis and account for margin */
+  box-shadow: 0 4px 8px 0 rgba(120, 35, 246, 0.5); /* Shadow for depth */
+}
+
+/* Ensure side image is responsive */
+.side-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-container {
+  max-width: 50%;
+  flex-grow: 1;
+  flex-basis: calc(50% - 20px); /* Adjust basis and account for margin */
 }
 
 .App-logo {
-  height: 45vmin;
-  pointer-events: none;
-  animation: logo-effect 3s infinite alternate;
+  height: 250px;
+  margin-bottom: 30px;
 }
 
-@keyframes logo-effect {
-  from {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  to {
-    transform: scale(1.05);
-    opacity: 1;
-  }
+.main-title {
+  color: #7823f6;
+  margin-bottom: 10px;
+  font-size: 2.5em;
 }
 
-.main-title, .sub-title {
-  font-size: 2rem; /* Uniform font size for titles */
-  margin: 40px 0;
+.twitter-link {
+  color: #1DA1F2;
+  font-size: 1em;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .sub-title {
-  font-size: 3rem; /* Slightly smaller subtitle */
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 1em;
 }
 
-.button-group {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Wrap buttons on smaller screens */
-  gap: 20px; /* Spacing between buttons */
+.instructions {
+  margin: 40px 0;
 }
 
-.button-group a {
-  flex: 1; /* Uniform button size */
-  max-width: 200px; /* Maximum width for buttons */
-  padding: 12px 30px;
-  background: rgb(0, 0, 0);
-  color: white;
+.instruction-item {
+  margin-bottom: 25px;
+}
+
+.instruction-item h3 {
+  margin-bottom: 10px;
+  color: #ffde59;
+  font-size: 1em;
+}
+
+.instruction-item a {
+  color: #4caf50;
   text-decoration: none;
-  border-radius: 5px;
-  border: ridge 2px rgb(242, 2, 26);
-  box-shadow: 0 2px 5px rgba(150, 50, 250, 0.6);
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2em;
 }
 
-.button-group a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(150, 50, 250, 0.8);
-}
-
-footer {
+.contract-link {
+  display: block;
+  color: #ff6f61;
   margin-top: 30px;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 footer a {
-  display: inline-block;
-  margin: 0 10px;
-  color: #61dafb;
+  color: #9f7aea;
   text-decoration: none;
-
+  font-size: 1.2em;
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  .content-layout {
+    flex-direction: column;
+  }
+
+  .text-card, .image-container {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
   .main-title, .sub-title {
-    font-size: 1.5rem;
-  }
-
-  .App-logo {
-    height: 30vmin;
-  }
-
-  .button-group a {
-    padding: 10px 20px;
+    font-size: smaller; /* Adjust font size for smaller screens */
   }
 }
