@@ -1,8 +1,8 @@
-# Free Spider, Anatoly's Vision
+## Free Spider - Anatoly's Vision
 
-## WE WANT TO FREE SPIDERMAN IP
-### Join us in our quest as we swap until we WIN #FREESPIDY.
+# Solana Aggregator by Community for ALL - powered by SPDR
 
+### It all started here :
 [Original Tweet](https://twitter.com/aeyakovenko/status/1733300877619064943)
 
 **Contract Address:** `AT79ReYU9XtHUTF5vM6Q4oa9K8w7918Fp5SU7G1MDMQY`
@@ -47,9 +47,6 @@ Stay tuned for future updates and developments.
 
 ## Sketch
 ![Spidy Sketch](https://github.com/itsmodsiw/spidy/assets/29111227/fb0adcae-1895-4524-9e29-7f305374a589)
-
-## Introduction
-Solana Aggregator by SPDR for ALL!
 
 
 ## MANIFESTO / DOCS 
