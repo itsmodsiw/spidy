@@ -1,6 +1,6 @@
 # Free Spider, Anatoly's Vision
 
-## WE WANT TO FREE SPIDEY
+## WE WANT TO FREE SPIDERMAN IP
 ### Join us in our quest as we swap until we WIN #FREESPIDY.
 
 [Original Tweet](https://twitter.com/aeyakovenko/status/1733300877619064943)
