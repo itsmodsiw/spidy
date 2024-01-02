@@ -13,8 +13,9 @@ function App() {
             <a href="https://birdeye.so/token/AT79ReYU9XtHUTF5vM6Q4oa9K8w7918Fp5SU7G1MDMQY?chain=solana" className="button">Buy Here</a>
             <a href="https://github.com/itsmodsiw/spidy" className="button">Documentation</a>
             <div className="social-links">
-              <a href="https://twitter.com/tolyspider">Twitter</a>
+              <a href="https://twitter.com/itsmodsiw">Twitter</a>
               <a href="https://t.me/Tolysspider">Telegram</a>
+              <a href="https://discorg.gg/spiderswap">Discord</a>
             </div>
           </div>
         </div>
