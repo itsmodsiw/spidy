@@ -15,7 +15,7 @@ function App() {
             <div className="social-links">
               <a href="https://twitter.com/itsmodsiw">Twitter</a>
               <a href="https://t.me/Tolysspider">Telegram</a>
-              <a href="https://discorg.gg/spiderswap">Discord</a>
+              <a href="https://discord.gg/spiderswap">Discord</a>
             </div>
           </div>
         </div>
