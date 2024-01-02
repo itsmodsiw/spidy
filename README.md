@@ -48,12 +48,9 @@ Stay tuned for future updates and developments.
 ## Sketch
 ![Spidy Sketch](https://github.com/itsmodsiw/spidy/assets/29111227/fb0adcae-1895-4524-9e29-7f305374a589)
 
+## Manifesto 
 
-## MANIFESTO / DOCS 
-
-[Community List](https://docs.google.com/document/d/1XsT8xwW9wxBLVUt6CPOK75KAA7q0Ii3F8xFXNd_GgMg)
-
-[SPDR - spiderswap](https://docs.google.com/document/d/1-HLmEJ3dzzScLrxyG8V3ASVRrmhHI8Se0Gufti0AT10)
+[SpiderSwapbase](https://voice.modsiw.io/spiderswap-io-by-spdr-6ee8ce868b2f)
 
 
 
